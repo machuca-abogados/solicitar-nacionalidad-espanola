@@ -1,0 +1,33 @@
+:root {
+  --secondary: #BE986E;
+  --ink: #000000;
+  --paper: #FFFFFF;
+  --card: #BE986E;
+  --clay: #B88A16;
+  --line: #BE986E;
+  --muted: #4F4F4F;
+  --global: #093D51;
+}
+
+.nav-wrap { background: rgba(255, 255, 255, .94); border-bottom-color: rgba(190, 152, 110, .65); }
+.brand-logo { display: block; width: min(300px, 48vw); height: auto; }
+.dark, footer { background: var(--global); }
+.dark .section-label, .dark .steps b { color: var(--secondary, #BE986E); }
+.closing { background: var(--clay); }
+.closing .eyebrow { color: var(--global); }
+.button.light { background: var(--paper); color: var(--ink); }
+.image-frame { background: var(--secondary, #BE986E); }
+.whatsapp-float { position: fixed; z-index: 10; right: 1.25rem; bottom: 1.25rem; display: inline-flex; align-items: center; gap: .5rem; padding: .8rem 1rem; border-radius: 999px; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,.18); font-size: .9rem; }
+.whatsapp-float span { font-size: 1.25rem; line-height: 1; }
+.whatsapp-float:hover { transform: translateY(-2px); }
+.pathways { background: #F7F3ED; }
+.section-intro { max-width: 46rem; color: var(--muted); font-size: 1.1rem; margin-bottom: 2.5rem; }
+.pathway-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.pathway-card { padding: 2rem; border: 1px solid var(--line); background: var(--paper); min-height: 18rem; display: flex; flex-direction: column; }
+.pathway-number { color: var(--clay); font-weight: 700; letter-spacing: .14em; }
+.pathway-card h3 { margin-top: 2rem; }
+.pathway-card p { color: var(--muted); }
+.pathway-card a { margin-top: auto; color: var(--global); font-weight: 700; text-decoration: none; }
+.pathway-card a:hover { color: var(--clay); }
+@media (max-width: 780px) { .pathway-grid { grid-template-columns: 1fr; } }
+.nav-wrap nav a:hover, .footer-links a:hover, .text-link:hover { color: var(--clay); }
